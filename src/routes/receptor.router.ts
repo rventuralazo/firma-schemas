@@ -4,6 +4,6 @@ import { ReceptorController } from "../controllers/ReceptorController";
 const receptorRouter = Router()
 
 
-receptorRouter.post('/fesv/recepciondte', ReceptorController.receive)
+receptorRouter.post('/api/dte-receiver', ReceptorController.receive)
 
 export default receptorRouter
