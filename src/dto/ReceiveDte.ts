@@ -4,5 +4,5 @@ export type ReceiveDTE = {
   version: string
   tipoDte: string
   codigoGeneracion: string
-  documento: string
+  documento: any
 }

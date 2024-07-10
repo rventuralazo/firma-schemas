@@ -10,7 +10,7 @@ export class ReceptorController {
   public static async receive(req: Request, res: Response) {
     console.log(`Recibiendo`)
     const data = req.body as ReceiveDTE;
-    const dte = JSON.parse(FirmadorService.obtenerDocumento(data.documento))
+    const dte = data.documento
 
     const schemaIsValid = await SchemaValidateService.validate(data.tipoDte as DOCUMENT_TYPE, data.documento)
     if (!schemaIsValid.error) {
