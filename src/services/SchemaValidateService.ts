@@ -30,7 +30,7 @@ export class SchemaValidateService {
     } else {
       throw new Error('Schema not found')
     }
-    const documentSchema = await fs.readFile(`/home/betacode/Trabajo/firmador-sv/src/schemas/${schema}`, 'utf-8')
+    const documentSchema = await fs.readFile(`./src/schemas/${schema}`, 'utf-8')
     const jsonSchema = JSON.parse(documentSchema)
     //const ajv = new Ajv();
     const validator = new Validator()
